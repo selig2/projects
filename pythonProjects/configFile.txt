@@ -1,0 +1,3 @@
+53   dew pt temperature
+5    dew point diff
+80   rel humidity

@@ -1,0 +1,1 @@
+curl 'http://www.teamrankings.com/ajax/league/v3/stats_controller.php' -H 'X-Requested-With: XMLHttpRequest' -d 'type=team-detail&league=nfl&stat_id=3&season_id=12&view=stats_v1&date=11%2F30%2F2014'

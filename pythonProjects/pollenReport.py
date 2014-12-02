@@ -15,6 +15,8 @@ def pollenReport():
 
 	lvlPattern = re.compile(pollenLevel)
 	lvlInstance = re.findall(lvlPattern, htmltext)
+	print lvlPattern
+	print lvlInstance
 
 	pollens = ptInstance[0][30:]#this was what I wanted at the time of writing the code. They may change the page and then this wouldn't be right.
 	score = lvlInstance[4]#this was what I wanted at the time of writing the code. They may change the page and then this wouldn't be right.
@@ -25,9 +27,9 @@ def pollenReport():
 			  '\n\nThis message was made by request via PollenAutoBot.\nHave a great day!'
 	
 	to = ['michael@selig.com', 'selig2@illinois.edu']
-	for address in to:
-		createMessage(address, 'pollenautobot@gmail.com', 'skytower', subject, bodymsg)
+	#for address in to:
+		#createMessage(address, 'pollenautobot@gmail.com', 'skytower', subject, bodymsg)
 	return "Message sent successfully."
 
 
-pollenReport()
+print pollenReport()

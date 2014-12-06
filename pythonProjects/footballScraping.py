@@ -21,7 +21,7 @@ def postRequests(url, headers, payload, outFile):
 	return the_page
 
 URL = "http://www.teamrankings.com/ajax/league/v3/stats_controller.php"
-payload = {"type": "team-detail", "league": "nfl", "stat_id": "4", "season_id": "12", "view": "stats_v1", "date": "11%2F30%2F2014"}
+payload = {"type": "team-detail", "league": "nfl", "stat_id": "259", "season_id": "12", "view": "stats_v1", "date": "12%2F4%2F2014"}
 headers = {"X-Requested-With": "XMLHttpRequest"}
 
 html = postRequests(URL, headers, payload, "ppp.html" )
